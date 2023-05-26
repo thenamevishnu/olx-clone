@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import {getStorage} from "firebase/storage"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAJdQKyN-Th40xHrl92Wkf-07JyyGoBcf4",
-    authDomain: "olx-clone-46d6a.firebaseapp.com",
-    projectId: "olx-clone-46d6a",
-    storageBucket: "olx-clone-46d6a.appspot.com",
-    messagingSenderId: "179688792996",
-    appId: "1:179688792996:web:76ebc58db3e798e950d731",
-    measurementId: "G-8YHKLSVL0L"
+    apiKey: process.env.react_app_apiKey,
+    authDomain: process.env.react_app_authDomain,
+    projectId: process.env.react_app_projectId,
+    storageBucket: process.env.react_app_storageBucket,
+    messagingSenderId: process.env.react_app_messagingSenderId,
+    appId: process.env.react_app_appId,
+    measurementId: process.env.react_app_measurementId
 };
 
 const app = initializeApp(firebaseConfig)
