@@ -1,0 +1,114 @@
+.moreView {
+  margin: 16px 16px 24px;
+  padding: 16px 16px 32px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+  position: relative;
+  left: 10.7%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.heading :last-child {
+  font-size: 14px;
+  color: #002f34;
+}
+
+.recommendations .cards {
+  display: flex;
+}
+
+.moreView .cards {
+  white-space: wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-inline: 40px;
+}
+
+.card {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  max-width: 222px;
+  width: 222px;
+  height: 300px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  left: 10%;
+  transform: translate(-10%,0%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #c0c2c3;
+  transition: 0.1s;
+}
+
+.card:hover{
+  scale: 0.98;
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 50px;
+  
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .image img {
+  margin-top: -23px;
+  height: 150px;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.card .content{
+  margin-top: -10px;
+}
+
+.card .content .rate {
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: bold;
+}
+.card .content .kilometer {
+  font-size: medium;
+}
+.card .content .name {
+  font-size: small;
+}
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.recommendations {
+  margin: 16px 16px 24px;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+}
